@@ -1,0 +1,119 @@
+[
+  {
+    "thumbnail": "https://content.mlb.com/images/headshots/current/60x60/502154@3x.png",
+    "name": "Zack Britton",
+    "number": 53,
+    "handedness": "L/L",
+    "height": "6' 3\" ",
+    "weight": 195,
+    "dob": "12/22/1987"
+  },
+  {
+    "thumbnail": "https://content.mlb.com/images/headshots/current/60x60/570666@3x.png",
+    "name": "Luis Cessa",
+    "number": 85,
+    "handedness": "R/R",
+    "height": "6' 0\" ",
+    "weight": 210,
+    "dob": "04/25/1992"
+  },
+  {
+    "thumbnail": "https://content.mlb.com/images/headshots/current/60x60/547973@3x.png",
+    "name": "Aroldis Chapman",
+    "number": 54,
+    "handedness": "L/L",
+    "height": "6' 4\" ",
+    "weight": 212,
+    "dob": "02/28/1988"
+  },
+  {
+    "thumbnail": "https://content.mlb.com/images/headshots/current/60x60/543037@3x.png",
+    "name": "Gerrit Cole",
+    "number": 45,
+    "handedness": "R/R",
+    "height": "6' 4\" ",
+    "weight": 225,
+    "dob": "09/08/1990"
+  },
+  {
+    "thumbnail": "https://content.mlb.com/images/headshots/current/60x60/643338@3x.png",
+    "name": "Chad Green",
+    "number": 57,
+    "handedness": "L/R",
+    "height": "6' 3\" ",
+    "weight": 210,
+    "dob": "05/24/1991"
+  },
+  {
+    "thumbnail": "https://content.mlb.com/images/headshots/current/60x60/457918@3x.png",
+    "name": "J.A. Happ",
+    "number": 33,
+    "handedness": "L/L",
+    "height": "6' 5\" ",
+    "weight": 205,
+    "dob": "10/19/1982"
+  },
+  {
+    "thumbnail": "https://content.mlb.com/images/headshots/current/60x60/656547@3x.png",
+    "name": "Jonathan Holder",
+    "number": 56,
+    "handedness": "R/R",
+    "height": "6' 2\" ",
+    "weight": 235,
+    "dob": "06/09/1993"
+  },
+  {
+    "thumbnail": "https://content.mlb.com/images/headshots/current/60x60/592454@3x.png",
+    "name": "Tommy Kahnle",
+    "number": 48,
+    "handedness": "R/R",
+    "height": "6' 1\" ",
+    "weight": 235,
+    "dob": "08/07/1989"
+  },
+  {
+    "thumbnail": "https://content.mlb.com/images/headshots/current/60x60/642528@3x.png",
+    "name": "Jonathan Loaisiga",
+    "number": 43,
+    "handedness": "R/R",
+    "height": "5' 11\" ",
+    "weight": 165,
+    "dob": "11/02/1994"
+  },
+  {
+    "thumbnail": "https://content.mlb.com/images/headshots/current/60x60/642528@3x.png",
+    "name": "Jordan Montgomery",
+    "number": 47,
+    "handedness": "L/L",
+    "height": "6' 6\" ",
+    "weight": 225,
+    "dob": "12/27/1992"
+  },
+  {
+    "thumbnail": "https://content.mlb.com/images/headshots/current/60x60/493603@3x.png",
+    "name": "Adam Ottavino",
+    "number": 0,
+    "handedness": "S/R",
+    "height": "6' 5\" ",
+    "weight": 220,
+    "dob": "11/22/1985"
+  },
+  {
+    "thumbnail": "https://content.mlb.com/images/headshots/current/60x60/572020@3x.png",
+    "name": "Luis Severino",
+    "number": 40,
+    "handedness": "R/R",
+    "height": "6' 4\" ",
+    "weight": 235,
+    "dob": "11/06/1988"
+  },
+  {
+    "thumbnail": "https://content.mlb.com/images/headshots/current/60x60/547888@3x.png",
+    "name": "Masahiro Tanaka",
+    "number": 19,
+    "handedness": "R/R",
+    "height": "6' 3\" ",
+    "weight": 215,
+    "dob": "11/01/1988"
+  }
+]

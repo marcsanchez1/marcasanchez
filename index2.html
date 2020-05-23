@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marc Sanchez</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+  <header> <!-- HEADER START-->
+    <!-- Navigation -->
+    <nav class="main-nav"> 
+      <a href="#"><img class="logo" src="/imgs/logo.svg"></a>
+      <ul>
+        <li><a href="#about">about</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+    <!-- Hero -->
+    <div id="hero">
+      <h1 class="hero-header">All<span class="dot">.</span>Things<span class="dot">.</span>Paper<span class="dot">.</span>and<span class="dot">.</span>Web</h1>
+      <p class="hero-paragraph">I love to design and create products based on your ideas and our collaboration.</p>
+      <button class="portfolio-hero-btn">View My Folio</button>
+      <button class="contact-hero-btn">Contact Me</button>
+    </div>
+  </header> <!-- HEADER END-->
+
+  <!-- About Me -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <img src="/imgs/profile-pic.jpg" class="profile-pic">
+    <p class="section-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt numquam dolorum voluptates id aliquam. Temporibus architecto quidem eum necessitatibus error provident ad voluptatum labore sequi, placeat ducimus commodi atque nulla.</p>
+    <div class="row">
+      <div class="column">
+        <h3><i class="fas fa-code"></i> Web Technologies</h3>
+        <label for="html">HTML</label>
+        <progress id="html" value="50" max="100"></progress>
+
+        <label for="css">CSS</label>
+        <progress id="css" value="50" max="100"></progress>
+
+        <label for="sass">SASS</label>
+        <progress id="sass" value="50" max="100"></progress>
+
+        <label for="javascript">Javascript</label>
+        <progress id="javascript" value="50" max="100"></progress>
+
+        <label for="jquery">JQuery</label>
+        <progress id="jquery" value="50" max="100"></progress>
+
+        <label for="automation">Automation</label>
+        <progress id="automation" value="50" max="100"></progress>
+
+        <label for="git">Git</label>
+        <progress id="git" value="50" max="100"></progress>
+      </div>
+
+      <div class="column">
+        <h3><i class="fab fa-adobe"></i> Design Technologies</h3>
+        <label for="photoshop">Photoshop</label>
+        <progress id="photoshop" value="50" max="100"></progress>
+
+        <label for="illustrator">Illustrator</label>
+        <progress id="illustrator" value="50" max="100"></progress>
+
+        <label for="indesign">Indesign</label>
+        <progress id="indesign" value="50" max="100"></progress>
+
+        <label for="adobe-xd">Adobe XD</label>
+        <progress id="adobe-xd" value="50" max="100"></progress>
+      </div>
+    </div>
+  </section>
+
+  <div class="parallax-img"></div>
+
+  <section id="portfolio">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-paragraph">Some ideas that sprung to life.</p>
+
+    <div class="row">
+      <div class="column red">
+        <img class="project-image" src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80">
+        <div class="project-btns">
+          <button class="project">Github</button>
+          <button class="project">Info</button>
+          <button class="project live-demo-btn">Demo</button>
+        </div>
+      </div>
+      <div class="column red">
+        <img class="project-image" src="https://images.unsplash.com/photo-1545665277-5937489579f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80">
+        <div class="project-btns">
+          <button class="project">Github</button>
+          <button class="project">Info</button>
+          <button class="project live-demo-btn">Demo</button>
+        </div>
+      </div>
+      <div class="column red">
+        <img class="project-image" src="https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80">
+        <div class="project-btns">
+          <button class="project">Github</button>
+          <button class="project">Info</button>
+          <button class="project live-demo-btn">Demo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/script2.js"></script>
+</body>
+</html>

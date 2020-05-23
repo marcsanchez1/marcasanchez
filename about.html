@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    section {
+        max-width: 1080px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      .column {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+
+      progress {
+        border: none;
+        width: 100%;
+        background: crimson;
+        margin: 0 0 20px;
+      }
+
+      progress::-webkit-progress-bar {
+        background: rgb(196, 196, 196);
+      }
+    @media (min-width: 767px) {
+      .row {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+      }
+
+      .column {
+        margin: 20px;
+      }
+
+    }
+    
+  </style>
+</head>
+<body>
+  <section id="about">
+    <div class="row">
+      <div class="column">
+        <h2>Web Technologies</h2>
+        <label for="html">HTML</label>
+        <progress id="html" value="50" max="100"></progress>
+
+        <label for="css">CSS</label>
+        <progress id="css" value="50" max="100"></progress>
+
+        <label for="sass">SASS</label>
+        <progress id="sass" value="50" max="100"></progress>
+
+        <label for="javascript">Javascript</label>
+        <progress id="javascript" value="50" max="100"></progress>
+
+        <label for="jquery">JQuery</label>
+        <progress id="jquery" value="50" max="100"></progress>
+
+        <label for="automation">Automation</label>
+        <progress id="automation" value="50" max="100"></progress>
+
+        <label for="git">Git</label>
+        <progress id="git" value="50" max="100"></progress>
+      </div>
+
+      <div class="column">
+        <h2>Design Technologies</h2>
+        <label for="photoshop">Photoshop</label>
+        <progress id="photoshop" value="50" max="100"></progress>
+
+        <label for="illustrator">Illustrator</label>
+        <progress id="illustrator" value="50" max="100"></progress>
+
+        <label for="indesign">Indesign</label>
+        <progress id="indesign" value="50" max="100"></progress>
+
+        <label for="adobe-xd">Adobe XD</label>
+        <progress id="adobe-xd" value="50" max="100"></progress>
+      </div>
+    </div>
+  </section>
+
+  
+</body>
+</html>
