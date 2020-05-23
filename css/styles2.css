@@ -1,3 +1,7 @@
+/* ======================================
+              BASIC STYLES
+====================================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +30,16 @@ h1.logo {
   font-size: 3em;
 }
 
+button,
+a {
+  cursor: pointer;
+}
+
+/* ======================================
+                HEADER
+====================================== */
+
+/* Header styles */
 header {
   background: url('https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80') no-repeat;
   background-size: cover;
@@ -38,6 +52,7 @@ header {
   text-align: center;
 }
 
+/* Top navigation */
 img.logo {
   display: flex;
   filter: invert(100%);
@@ -84,6 +99,14 @@ nav.main-nav ul li a:hover {
   z-index: 9999;
 }
 
+/* ======================================
+                    HERO
+====================================== */
+/* Hero styles */
+header#hero {
+  max-width: 1280px;
+}
+
 header > #hero h1 {
   display: flex;
   justify-content: center;
@@ -105,10 +128,7 @@ header > #hero p.hero-paragraph {
   margin: auto;
 }
 
-header#hero {
-  max-width: 1280px;
-}
-
+/* Hero buttons */
 button.portfolio-hero-btn,
 button.contact-hero-btn {
   width: 250px;
@@ -137,30 +157,31 @@ button.contact-hero-btn:hover {
   background: rgba(201, 5, 5, 0.5);
 }
 
+/* ======================================
+                SECTIONS
+====================================== */
+/* Section styles */
 section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1280px;
+  flex-wrap: wrap;
+  max-width: 100%;
   margin: auto;
   padding: 20px;
 }
 
-section#about {
-  background: rgb(248, 247, 247);
+/* Individual section styles */
+section#about,
+section#services {
+  background: rgb(231, 230, 230);
   width: 100%;
 }
 
-img.profile-pic {
-  width: 100px;
-  border-radius: 50%;
-  border: 2px solid rgb(240, 237, 237);
-  z-index: 1;
-}
-
+/* Section title and lead text styles */
 .section-title,
-.section-paragraph {
+section p.section-paragraph {
   text-align: center;
   margin: auto;
 }
@@ -169,37 +190,46 @@ img.profile-pic {
   color: rgb(0, 0, 0);
 }
 
-.section-paragraph {
-  max-width: 600px;
+section p.section-paragraph {
   text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
 }
 
+/* Profile pic in the About section */
+img.profile-pic {
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid rgb(240, 237, 237);
+  margin: 10px;
+}
+
+/* Font awesome icons */
 i.fas.fa-code,
 i.fab.fa-adobe {
   color: rgb(201, 5, 5);
 }
 
 .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
-  /* max-width: 1280px; */
+  max-width: 1280px;
 }
 
 .column {
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
   flex-wrap: wrap;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  padding: 10px;
-  margin-bottom: 20px;
-  width: 100%;
+  margin: 10px;
 }
 
+/* Progress bars in About Me section */
 progress {
   border: none;
   width: 100%;
-  background: crimson;
+  background: rgb(201, 5, 5);
   margin: 0 0 20px;
 }
 
@@ -207,25 +237,19 @@ progress::-webkit-progress-bar {
   background: rgb(201, 5, 5);
 }
 
-section#about p.about-description {
-  text-align: center;
-  max-width: 75%;
-  color: rgba(0, 0, 0, 0.4);
-  margin-bottom: 30px;
-}
-
 .parallax-img {
-  background: url('https://images.unsplash.com/photo-1576595580361-90a855b84b20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80') no-repeat;
+  background: url('https://images.unsplash.com/photo-1547027072-332f09bd6bb3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 300px;
   filter: contrast(100%);
 }
 
-.red {
+/* .red {
   border: 1px solid rgb(201, 5, 5);
-}
+} */
 
+/* Image styles for project cards */
 .project-image {
   border-radius: 3px;
   width: 100%;
@@ -236,33 +260,71 @@ section#about p.about-description {
   opacity: .8;
 }
 
-.project-btns {
+/* Buttons styles for project cards */
+.project-ctas {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-button.project {
   flex: 1;
-  padding: 10px;
-  margin: 10px 2px 0;
-  border-radius: 3px;
-  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+button.project-btns {
+  width: auto;
+  padding: 5px 10px;
+  margin: 2px;
+  flex: 1;
+  background: none;
   border: 1px solid rgb(201, 5, 5);
+  border-radius: 3px;
   font-size: .75em;
-  transition: font-size .25s ease-in-out;
+  text-transform: uppercase;
+  transition: .25s ease-in-out;
+  outline: none;
+  cursor: pointer;
 }
 
-button.project:hover {
-  font-size: .85em;
+button.project-btns:hover {
+  font-weight: 700;
 }
 
-button.live-demo-btn {
-  width: 100%;
+button.demo-btn {
+  background: rgb(201, 5, 5);
+  color: #FFF;
   flex: 2;
-  background: rgba(201, 5, 5, 0.2);
 }
 
+/* Used to give progress bars full width in mobile devices */
+.full-width {
+  width: 100%;
+}
+
+/* Services styles */
+.services {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.services .fa-code,
+.services .fa-adobe,
+.services .fa-desktop {
+  font-size: 3em;
+  color: rgb(201, 5, 5);
+  margin-bottom: 10px;
+}
+
+.services p {
+  text-align: center;
+}
+
+
+
+/* ======================================
+              MEDIA QUERIES
+====================================== */
   @media (min-width: 767px) {
 
     img.logo {
@@ -301,15 +363,24 @@ button.live-demo-btn {
       font-size: 1.5em;
     }
 
-    .row {
+    section p.section-paragraph {
+      width: 600px;
+    }
+
+    /* .row {
       display: flex;
       justify-content: center;
       padding: 20px;
-    }
+    } */
 
     .column {
-      margin: 20px;
-      width: 50%;
+      width: 40%;
+      margin-bottom: 20px;
     }
+  }
 
+  @media (min-width: 1024px) {
+    .column {
+      width: 30%;
+    }
   }

@@ -6,86 +6,108 @@
   <title>Document</title>
   <style>
     section {
-        max-width: 1080px;
-        margin: auto;
-        padding: 20px;
-      }
-
-      .column {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        padding: 10px;
-        margin-bottom: 20px;
-      }
-
-      progress {
-        border: none;
-        width: 100%;
-        background: crimson;
-        margin: 0 0 20px;
-      }
-
-      progress::-webkit-progress-bar {
-        background: rgb(196, 196, 196);
-      }
-    @media (min-width: 767px) {
-      .row {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 20px;
-      }
-
-      .column {
-        margin: 20px;
-      }
-
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 100%;
+      margin: auto;
+      padding: 20px;
     }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 1280px;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 10px;
+    }
+
+    img.project-image {
+      width: 100%;
+      border-radius: 3px;
+    }
+
+    .project-ctas {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex: 1;
+      margin-top: 10px;
+    }
+
+    button.project-btns {
+      width: auto;
+      padding: 5px 10px;
+      margin: 2px;
+      flex: 1;
+      background: none;
+      border: 1px solid rgb(201, 5, 5);
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+
+    button.demo-btn {
+      background: rgb(201, 5, 5);
+      color: #FFF;
+      flex: 2;
+    }
+      
+      @media (min-width: 767px) {
+        .column {
+          width: 40%;
+          margin-bottom: 20px;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .column {
+          width: 30%;
+        }
+
+      }
     
   </style>
 </head>
 <body>
   <section id="about">
     <div class="row">
-      <div class="column">
-        <h2>Web Technologies</h2>
-        <label for="html">HTML</label>
-        <progress id="html" value="50" max="100"></progress>
-
-        <label for="css">CSS</label>
-        <progress id="css" value="50" max="100"></progress>
-
-        <label for="sass">SASS</label>
-        <progress id="sass" value="50" max="100"></progress>
-
-        <label for="javascript">Javascript</label>
-        <progress id="javascript" value="50" max="100"></progress>
-
-        <label for="jquery">JQuery</label>
-        <progress id="jquery" value="50" max="100"></progress>
-
-        <label for="automation">Automation</label>
-        <progress id="automation" value="50" max="100"></progress>
-
-        <label for="git">Git</label>
-        <progress id="git" value="50" max="100"></progress>
+      <div class="column red">
+        <img class="project-image" src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80">
+        <div class="project-ctas">
+          <button class="project-btns">Github</button>
+          <button class="project-btns">Info</button>
+          <button class="project-btns demo-btn">Demo</button>
+        </div>
       </div>
-
-      <div class="column">
-        <h2>Design Technologies</h2>
-        <label for="photoshop">Photoshop</label>
-        <progress id="photoshop" value="50" max="100"></progress>
-
-        <label for="illustrator">Illustrator</label>
-        <progress id="illustrator" value="50" max="100"></progress>
-
-        <label for="indesign">Indesign</label>
-        <progress id="indesign" value="50" max="100"></progress>
-
-        <label for="adobe-xd">Adobe XD</label>
-        <progress id="adobe-xd" value="50" max="100"></progress>
+      <div class="column red">
+        <img class="project-image" src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80">
+        <div class="project-ctas">
+          <button class="project-btns">Github</button>
+          <button class="project-btns">Info</button>
+          <button class="project-btns demo-btn">Demo</button>
+        </div>
+      </div>
+      <div class="column red">
+        <img class="project-image" src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80">
+        <div class="project-ctas">
+          <button class="project-btns">Github</button>
+          <button class="project-btns">Info</button>
+          <button class="project-btns demo-btn">Demo</button>
+        </div>
+      </div>
+      <div class="column red">
+        <img class="project-image" src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80">
+        <div class="project-ctas">
+          <button class="project-btns">Github</button>
+          <button class="project-btns">Info</button>
+          <button class="project-btns demo-btn">Demo</button>
+        </div>
       </div>
     </div>
   </section>
