@@ -242,6 +242,19 @@ section p.section-paragraph {
     color: rgb(201, 5, 5);
   }
 
+  .slides {
+    display: flex;
+  }
+
+  .slides img {
+    height: 100px;
+  }
+
+  .slick-dots li button:before {
+    font-size: 26px;
+    margin-top: 30px;
+  }
+
   /* Progress bars in About Me section */
   progress {
     border: none;

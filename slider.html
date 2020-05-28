@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="js/slick/slick.css">
+  <link rel="stylesheet" href="js/slick/slick-theme.css">
+
+  <style>
+    img {
+      height: 100px;
+    }
+    .slick-dots li button:before {
+      font-size: 26px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- slides go here-->
+  <div class="slides">
+    <div class="review">
+      <img src="imgs/tech-icons/HTML5.png" alt="" class="HTML5" />
+    </div><!--/1-->
+    <div class="review">
+      <img src="imgs/tech-icons/css3.png" alt="" class="CSS3" />
+    </div><!--/2-->
+    <div class="review">
+      <img src="imgs/tech-icons/sass.png" alt="" class="SASS" />
+    </div><!--/3-->
+    <div class="review">
+      <img src="imgs/tech-icons/bootstrap.png" alt="" class="Bootstrap" />
+    </div><!--/4-->
+    <div>
+      <img src="imgs/tech-icons/javascript.png" alt="" class="JavaScript" />
+    </div><!--/5-->
+    <div>
+      <img src="imgs/tech-icons/jquery.png" alt="" class="JQuery" />
+    </div><!--/6-->
+    <div>
+      <img src="imgs/tech-icons/cypress.png" alt="" class="Cypress" />
+    </div><!--/7-->
+    <div>
+      <img src="imgs/tech-icons/GitHub.png" alt="" class="GitHub" />
+    </div><!--/8-->
+    <div>
+      <img src="imgs/tech-icons/sql.png" alt="" class="SQL" />
+    </div><!--/9-->
+    <div>
+      <img src="imgs/tech-icons/photoshop.svg" alt="" class="Adobe Photoshop" />
+    </div><!--/10-->
+    <div>
+      <img src="imgs/tech-icons/illustrator.svg" alt="" class="Adobe Illustrator" />
+    </div><!--/11-->
+    <div>
+      <img src="imgs/tech-icons/indesign.svg" alt="" class="Adobe Indesign" />
+    </div><!--/12-->
+    <div>
+      <img src="imgs/tech-icons/xd.svg" alt="" class="Adobe XD" />
+    </div><!--/13-->
+   </div>
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/slick/slick.min.js"></script>
+  <script>
+    $('.slides').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+  </script>
+</body>
+</html>
