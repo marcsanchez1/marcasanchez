@@ -242,6 +242,11 @@ progress::-webkit-progress-bar {
   background: rgb(201, 5, 5);
 }
 
+title {
+  background: red;
+  color: #FFF;
+}
+
 .parallax-img {
   background: url('https://images.unsplash.com/photo-1547027072-332f09bd6bb3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80') no-repeat center;
   background-size: cover;
@@ -258,7 +263,7 @@ progress::-webkit-progress-bar {
 .project-image {
   border-radius: 3px;
   width: 100%;
-  transition: .5s ease-in-out;
+  transition: all .5s ease;
 }
 
 .project-image:hover {
@@ -284,7 +289,7 @@ button.project-btns {
   border-radius: 3px;
   font-size: .75em;
   text-transform: uppercase;
-  transition: .25s ease-in-out;
+  transition: all .25s ease;
   outline: none;
   cursor: pointer;
 }
@@ -352,6 +357,11 @@ textarea {
   height: 100px;
 }
 
+input:hover,
+textarea:hover {
+  background-color: rgba(201, 5, 5, 0.1);
+}
+
 input:focus,
 textarea:focus {
   background-color: rgba(201, 5, 5, 0.1);
@@ -371,7 +381,7 @@ button.submit-btn {
   color: rgb(355, 255, 255);
   text-transform: uppercase;
   font-size: 1em;
-  transition: .25s ease-in-out;
+  transition: all 0.2s ease;
 }
 
 button.submit-btn:hover {
@@ -379,6 +389,12 @@ button.submit-btn:hover {
   font-weight: 700;
 }
 
+footer {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 /* ======================================
               MEDIA QUERIES
@@ -434,6 +450,10 @@ button.submit-btn:hover {
     .column {
       width: 40%;
       margin-bottom: 20px;
+    }
+
+    footer {
+      flex-direction: row;
     }
   }
 
