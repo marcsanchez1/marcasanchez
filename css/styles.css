@@ -241,17 +241,34 @@ section p.section-paragraph {
     color: rgb(201, 5, 5);
   }
 
-  /* Progress bars in About Me section */
-  progress {
-    border: none;
-    width: 100%;
-    background: rgb(201, 5, 5);
-    margin: 0 0 20px;
+  /* Tech imgs in About Me section */
+
+  #tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 
-  progress::-webkit-progress-bar {
-    background: rgb(201, 5, 5);
+  #tech-icons img {
+    height: 100px;
+    padding: 15px;
+    align-self: center;
   }
+
+  .slides {
+    width: 100%;
+    margin: 50px auto;
+  }
+
+  .slides img {
+    height: 100px;
+  }
+  .slick-dots li button:before {
+    font-size: 36px;
+    margin-top: 30px;
+  }
+  
 
     /* =========== Media Queries for Rows and Columns styles ============ */
     @media (min-width:767px) {
@@ -428,12 +445,16 @@ textarea:focus {
 
 .social-media span.contact-label {
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 .social-media a {
   color: rgb(92, 91, 91);
   font-size: 1.2em;
+}
+
+.social-media .fas {
+  color: rgb(201, 5, 5);
 }
 
 
