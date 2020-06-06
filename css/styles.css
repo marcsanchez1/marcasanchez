@@ -14,7 +14,6 @@ header {
   flex-direction: column;
   background: url('https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80') no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -59,6 +58,10 @@ header {
     /* Media Queries for navigation */
     @media (min-width:767px) {
 
+      header {
+        background-attachment: fixed;
+      }
+
       nav.main-nav {
         flex-direction: row;
         align-items: center;
@@ -96,10 +99,6 @@ header {
     text-shadow: 1px 1px 3px #000;
     text-align: center;
     transition: all .25s ease-in-out;
-  }
-
-  .hero-btns {
-    display: none;
   }
 
     /* =========== Media Queries for hero ============ */
@@ -304,9 +303,14 @@ section p.section-paragraph {
 .parallax-img {
   background: url('https://images.unsplash.com/photo-1547027072-332f09bd6bb3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80') no-repeat center;
   background-size: cover;
-  background-attachment: fixed;
   height: 300px;
   filter: contrast(100%);
+}
+
+@media (min-width: 767px) {
+  .parallax-img {
+    background-attachment: fixed;
+  }
 }
 
 /* =====================================
