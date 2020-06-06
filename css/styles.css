@@ -15,7 +15,7 @@ header {
   background: url('https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80') no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 100vh;
+  height: 100vh;
 }
 
   /* Navigation styles */
@@ -75,13 +75,50 @@ header {
     }
 
   /* Hero styles */
+/* #hero {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+  color: #FFF;
+  padding: 0 40px;
+}
+
+#hero h1.hero-header {
+  line-height: 1.4;
+  font-size: 2em;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px #000;
+  text-align: center;
+  transition: all .25s ease-in-out;
+}
+
+.hero-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#hero button a {
+  color: rgb(255, 255, 255);
+}
+
+.hero-btns button.portfolio-hero-btn,
+.hero-btns button.contact-hero-btn {
+  width: 250px;
+  padding: 20px 40px;
+} */
+
   #hero {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 75px;
+    margin-top: 10px;
     color: #FFF;
     padding: 0 40px;
   }
@@ -91,64 +128,15 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     line-height: 1.4;
-    font-size: 1.75em;
+    font-size: 2em;
     font-weight: 700;
     text-shadow: 1px 1px 3px #000;
     text-align: center;
     transition: all .25s ease-in-out;
   }
 
-  #hero h1 span.dot {
-    color: rgb(201, 5, 5);
-    text-shadow: none;
-  }
-
-  #hero p.hero-paragraph {
-    background-color: rgba(255, 255, 255, 0.6);
-    color: rgb(201, 5, 5);
-    padding: 20px;
-    margin: 10px 0;
-    text-align: center;
-    /* text-shadow: 1px 1px 3px #000; */
-    border-radius: 3px;
-  }
-  
-  /* Hero buttons */
   .hero-btns {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  #hero button a {
-    color: rgb(255, 255, 255);
-  }
-  .hero-btns button.portfolio-hero-btn,
-  .hero-btns button.contact-hero-btn {
-    width: 250px;
-    padding: 20px 40px;
-    font-size: 1.5em;
-    color: rgb(255, 255, 255);
-    margin: 10px 15px;
-    border: 3px solid #FFF;
-    border-radius: 3px;
-    transition: .25s ease-in-out;
-  }
-  
-  button.portfolio-hero-btn {
-    background: rgba(0, 0, 0, 0.4);
-  }
-  
-  button.portfolio-hero-btn:hover  {
-    background: rgba(0, 0, 0, 0.2);
-  }
-  
-  button.contact-hero-btn {
-    background: rgb(201, 5, 5);
-  }
-  
-  button.contact-hero-btn:hover {
-    background: rgba(201, 5, 5, 0.5);
+    display: none;
   }
 
     /* =========== Media Queries for hero ============ */
@@ -163,12 +151,42 @@ header {
         margin-top: 100px;
       }
 
-      #hero p.hero-paragraph {
-        font-size: 1.5em;
-      }
-
+      /* Hero buttons */
       .hero-btns {
-        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      
+      #hero button a {
+        color: rgb(255, 255, 255);
+      }
+      .hero-btns button.portfolio-hero-btn,
+      .hero-btns button.contact-hero-btn {
+        width: 250px;
+        padding: 20px 40px;
+        font-size: 1.5em;
+        color: rgb(255, 255, 255);
+        margin: 10px 15px;
+        border: 3px solid #FFF;
+        border-radius: 3px;
+        transition: .25s ease-in-out;
+      }
+      
+      button.portfolio-hero-btn {
+        background: rgba(0, 0, 0, 0.4);
+      }
+      
+      button.portfolio-hero-btn:hover  {
+        background: rgba(0, 0, 0, 0.2);
+      }
+      
+      button.contact-hero-btn {
+        background: rgb(201, 5, 5);
+      }
+      
+      button.contact-hero-btn:hover {
+        background: rgba(201, 5, 5, 0.5);
       }
 
     }
@@ -192,15 +210,16 @@ section h2.section-title {
 }
 
 section p.section-paragraph {
-  max-width: 800px;
+  max-width: 750px;
   color: rgba(0, 0, 0, 0.4);
   margin: 10px;
   text-align: center;
+  font-size: 1.125em;
 }
 
   /* About me profile img styles */
   #about img.profile-pic {
-    width: 100px;
+    width: 150px;
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, 0.5);
     margin-top: 10px;
@@ -209,6 +228,29 @@ section p.section-paragraph {
   section#about,
   section#services {
     background: rgb(231, 230, 230);
+  }
+
+  #about p.about-paragraph {
+    font-size: 1.5em;
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 3px;
+    max-width: 800px;
+  }
+
+  .contact .fab {
+    margin: 5px;
+    font-size: 1.3em;
+  }
+
+  .contact a {
+    color: rgb(201, 5, 5);
+    transition: all .25s ease-in-out;
+  }
+
+  .contact a:hover {
+    color: rgba(201, 5, 5, 0.5);
   }
 
   /* Row and Column styles */
@@ -307,6 +349,15 @@ section p.section-paragraph {
 /* =====================================
 ========= PROJECT SECTION STYLES ======*/
 
+#portfolio .section-paragraph a {
+  color: rgb(201, 5, 5);
+  transition: all .25s ease-in-out;
+}
+
+#portfolio .section-paragraph a:hover {
+  color: rgba(201, 5, 5, 0.5);
+}
+
 img.project-image {
   border-radius: 3px;
   width: 100%;
@@ -359,10 +410,18 @@ button.demo-btn {
 }
 
 section#services .fas,
-section#services .fab {
+section#services .fab,
+section#services .far {
   font-size: 2.5em;
   color: rgb(201, 5, 5);
   margin-bottom: 15px;
+  transition: all .10s ease-in-out;
+}
+
+section#services .fas:hover,
+section#services .fab:hover,
+section#services .far:hover {
+  color: rgba(201, 5, 5, 0.5);
 }
 
 section#services h3 {
@@ -457,8 +516,17 @@ textarea:focus {
   font-size: 1.2em;
 }
 
-.social-media .fas {
+.social-media .fas,
+.social-media .fab {
   color: rgb(201, 5, 5);
+  margin: 5px;
+  transition: all .10s ease-in-out;
+}
+
+.fas:hover,
+.fab:hover,
+.far:hover {
+  color: rgba(201, 5, 5, 0.5);
 }
 
 

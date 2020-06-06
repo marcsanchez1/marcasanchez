@@ -5,15 +5,11 @@ $(".main-nav").sticky({
 
 $('.hero-header').hide();
 $('.hero-header').slideDown(1000);
-$('.hero-paragraph').hide();
-$('.portfolio-hero-btn').hide();
-$('.contact-hero-btn').hide();
+$('.hero-btns').hide();
 
 setTimeout(function() {
-  $('.hero-paragraph').slideDown();
-  $('.portfolio-hero-btn').slideDown();
-  $('.contact-hero-btn').slideDown();
-}, 2000);
+  $('.hero-btns').fadeIn();
+}, 1000);
 
 // Slides in the about me section
 
