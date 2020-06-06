@@ -81,7 +81,6 @@ header {
   #hero {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
@@ -93,6 +92,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 960px;
     line-height: 1.4;
     font-size: 2em;
     font-weight: 700;
@@ -105,7 +105,7 @@ header {
   .hero-btns {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     margin-top: 10px;
   }
@@ -116,7 +116,7 @@ header {
   .hero-btns button.portfolio-hero-btn,
   .hero-btns button.contact-hero-btn {
     width: 250px;
-    padding: 20px 40px;
+    padding: 20px;
     font-size: 1.5em;
     color: rgb(255, 255, 255);
     margin: 10px 15px;
