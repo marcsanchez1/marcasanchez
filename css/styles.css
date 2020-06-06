@@ -101,6 +101,46 @@ header {
     transition: all .25s ease-in-out;
   }
 
+  /* Hero buttons */
+  .hero-btns {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  #hero button a {
+    color: rgb(255, 255, 255);
+  }
+  .hero-btns button.portfolio-hero-btn,
+  .hero-btns button.contact-hero-btn {
+    width: 250px;
+    padding: 20px 40px;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    margin: 10px 15px;
+    border: 3px solid #FFF;
+    border-radius: 3px;
+    transition: .25s ease-in-out;
+  }
+  
+  button.portfolio-hero-btn {
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  button.portfolio-hero-btn:hover  {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  button.contact-hero-btn {
+    background: rgb(201, 5, 5);
+  }
+  
+  button.contact-hero-btn:hover {
+    background: rgba(201, 5, 5, 0.5);
+  }
+
     /* =========== Media Queries for hero ============ */
     @media (min-width:767px) {
 
@@ -113,42 +153,8 @@ header {
         margin-top: 100px;
       }
 
-      /* Hero buttons */
       .hero-btns {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-      }
-      
-      #hero button a {
-        color: rgb(255, 255, 255);
-      }
-      .hero-btns button.portfolio-hero-btn,
-      .hero-btns button.contact-hero-btn {
-        width: 250px;
-        padding: 20px 40px;
-        font-size: 1.5em;
-        color: rgb(255, 255, 255);
-        margin: 10px 15px;
-        border: 3px solid #FFF;
-        border-radius: 3px;
-        transition: .25s ease-in-out;
-      }
-      
-      button.portfolio-hero-btn {
-        background: rgba(0, 0, 0, 0.4);
-      }
-      
-      button.portfolio-hero-btn:hover  {
-        background: rgba(0, 0, 0, 0.2);
-      }
-      
-      button.contact-hero-btn {
-        background: rgb(201, 5, 5);
-      }
-      
-      button.contact-hero-btn:hover {
-        background: rgba(201, 5, 5, 0.5);
+        flex-direction: row;
       }
 
     }
