@@ -408,23 +408,17 @@ section#services h3 {
 footer {
   display: flex;
   flex-direction: column;
-  margin-top: 25px;
   width: 100%;
-  max-width: 980px;
-}
-
-.side {
-  margin-bottom: 25px;
-  padding: 20px;
-}
-
-.side p {
-  margin-top: 15px;
+  max-width: 680px;
 }
 
 footer form label {
   display: block;
   margin-top: 15px;
+}
+
+form {
+  width: 100%;
 }
 
 input,
@@ -472,16 +466,14 @@ textarea:focus {
   background: rgba(201, 5, 5, 0.5);
 }
 
-.social-media p.direct-contact {
-  font-size: 1.5em;
-  font-weight: 700;
-  letter-spacing: .115em;
-  color: rgb(201, 5, 5);
+.social-media {
+  text-align: center;
+  margin: auto;
 }
 
 .social-media span.contact-label {
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 2.3em;
 }
 
 .social-media a {
@@ -492,7 +484,7 @@ textarea:focus {
 .social-media .fas,
 .social-media .fab {
   color: rgb(201, 5, 5);
-  margin: 5px;
+  margin: 0 15px;
   transition: all .10s ease-in-out;
 }
 
@@ -501,23 +493,8 @@ textarea:focus {
 .far:hover {
   color: rgba(201, 5, 5, 0.5);
 }
-
-
-
-
-
   /* =========== Media Queries for Rows and Columns styles ============ */
-  @media (min-width:767px) {
-    footer {
-      flex-direction: row;
-      justify-content: space-around;
-
-    }
-
-    .side {
-      width: 100%;
-      padding: 20px;
-    }
+  /* @media (min-width:767px) {
 
     .contact-form {
       flex: 2;
@@ -528,5 +505,5 @@ textarea:focus {
       width: 50%;
     }
     
-  }
+  } */
 
