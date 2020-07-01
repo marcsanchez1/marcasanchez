@@ -467,6 +467,20 @@ textarea:focus {
   background: rgba(201, 5, 5, 0.5);
 }
 
+.back-to-home-btn:hover {
+  background: rgba(201, 5, 5, 0.5);
+}
+
+.back-to-home-btn {
+  background: rgb(201, 5, 5);
+  color: #FFF;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border: 2px solid rgba(201, 5, 5, 0.5);
+  border-radius: 3px;
+  transition: background .25s ease-in-out;
+}
+
 .social-media {
   text-align: center;
   margin: auto;
