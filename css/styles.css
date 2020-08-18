@@ -334,9 +334,13 @@ section p.section-paragraph {
 
 img.project-image {
   border-radius: 3px;
+  border-top: 10px solid rgb(231, 230, 230);
   width: 100%;
-  /* max-width: 368px; */
   transition: all .5s ease;
+}
+
+img.project-image::before {
+  background: #000;
 }
 
 .project-image:hover {
@@ -348,13 +352,13 @@ img.project-image {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* flex: 1; */
 }
 
-button.project-btns {
-  width: auto;
+a.project-btns {
+  align-self: center;
+  text-align: center;
   padding: 5px 10px;
-  margin: 2px;
+  margin-right: 5px;
   flex: 1;
   background: none;
   border: 1px solid rgb(201, 5, 5);
@@ -364,16 +368,24 @@ button.project-btns {
   transition: all .25s ease;
   outline: none;
   cursor: pointer;
+  color: rgb(0, 0, 0);
 }
 
-button.project-btns:hover {
+a.project-btns:hover {
   font-weight: 700;
 }
 
-button.demo-btn {
+a.demo-btn {
   background: rgb(201, 5, 5);
   color: #FFF;
   flex: 2;
+  margin-right: 0;
+  letter-spacing: .1em;
+  transition: .15s ease-in-out;
+}
+
+a.demo-btn:hover {
+  background: rgba(201, 5, 5, 0.5);
 }
 
 /* =======================================
